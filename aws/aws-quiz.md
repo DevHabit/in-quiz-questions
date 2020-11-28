@@ -166,7 +166,7 @@
 #### Q23. You have four front-end web servers behind a load balancer, which use NFS to access another EC2 instance that resizes and stores images for the front-end application. What security group policies should be assigned to these servers?
 
 - [ ] Assign Elastic IPs to all of the instances and create a group that allows all traffic to pass between each of the five
-Elastic IP addresses and allow all inbound HTTPS traffic.
+      Elastic IP addresses and allow all inbound HTTPS traffic.
 - [x] Front-end web servers should allow HTTPS. Assign another group to all of the instances that allows all traffic to pass between instances using that group.
 - [ ] Create a security group that allows inbound NFS, HTTP, and HTTPS traffic from all IP addresses. Apply this group to all of the servers.
 - [ ] Create a security group that allows inbound HTTP and HTTPS traffic from all IP addresses and apply this to the web servers. Create a second security group for the NFS filestore that allows outbound NFS traffic to the private IP range of the front-end web servers.
@@ -209,8 +209,8 @@ Elastic IP addresses and allow all inbound HTTPS traffic.
   "Action": "s3:GetObject",
   "Resource": "arn:aws:s3:::userreports/*",
   "Condition": {
-    "IpAddress": {"aws:SourceIp": "68.249.108.0/24"},
-    "NotIpAddress": {"aws:SourceIp": "68.249.108.128/32"}
+    "IpAddress": { "aws:SourceIp": "68.249.108.0/24" },
+    "NotIpAddress": { "aws:SourceIp": "68.249.108.128/32" }
   }
 }
 ```
@@ -219,3 +219,90 @@ Elastic IP addresses and allow all inbound HTTPS traffic.
 - [ ] bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to access objects in the userreports bucket and denies access to 68.249.108.128.
 - [ ] bucketpolicy1 allows any user to perform any action on the objects in the userreports bucket - except anyone coming from the IP of 68.249.108.128.
 - [x] bucketpolicy1 allows any user coming from the IP range of 68.249.108.0 to 68.249.108.255 to access objects in the userreports bucket-except anyone coming from the IP of 68.249.108.128.
+
+#### Q29. What option is best for Auto Scaling your EC2 instances for predictable traffic patterns?
+
+- [ ] manual scaling
+- [x] scale based on a schedule
+- [ ] maintain current levels at all times
+- [ ] scale based on demand
+
+#### Q30. Which big data store will let you store large streams of user activity data coming from both web and mobile applications?
+
+- [ ] RDS for SQL Server
+- [ ] Redshift
+- [x] Aurora
+- [ ] Neptune
+
+#### Q31. In the S3 console, underneath the Access column, what does the public badge next to the bucket name indicate?
+
+https://cdn.lynda.com/question/5d250275498e43453c6c86de/5d250275498e43453c6c86de-1562706910644
+
+- [ ] All objects within this bucket are writable, which means that the public internet has the ability to upload any file directly to your S3 bucket. Your S3 bucket could be used to serve malware.
+- [ ] Objects within this bucket can be made public, if the ACL on that object is set to allow everyone access. Private buckets do not allow you to set public permissions on any object.
+- [x] All objects within this bucket are assigned public access and could be readable or writable by anyone on the internet. Ensure no sensitive data is being publicly shared within this bucket.
+- [ ] Some objects within this bucket are assigned public access. Verify that any publicly shared objects within this bucket contain no sensitive data.
+
+#### Q32. A nontechnical client wants to migrate a WordPress site to AWS from a private server managed by a third-party hosting company. Which AWS service should you recommend to migrate the site to?
+
+- [ ] S3.
+- [ ] Lightsail.
+- [x] an EC2 instance launched from the official WordPress AMI
+- [ ] CloudFront
+
+#### Q33. What does the following AWS CLI `create-service` command for ECS do?
+
+```js
+aws ecs create-service \
+ --cluster production \
+ --service-name rest-api \
+ --task-definition rest-api:1 \
+ --desired-count 2 \
+ --launch-type "FARGATE" \
+ --network-configuration \
+ "awsvpcConfiguration={subnets=[subnet-0b29129ab],securityGroups=[sg-0b29129ab]}"
+```
+
+- [x] creates a cluster called `production` and launches two containers onto Fargate with the `rest-api` task definition
+- [ ] creates a service definition for the `rest-api` task; puts two containers on the production cluster when launched with the `ecs-cli` up command
+- [ ] changes the security groups of the running `rest-api` task
+- [ ] launches two containers onto Fargate into the existing `production` cluster using the `rest-api` task definition
+
+#### Q34. When sending a large volume of email through SES, what is the most important set of metrics to monitor?
+
+- [ ] clicks and deliveries
+- [x] opens and clicks
+- [ ] sending volume over the past 15 minutes and over one day to watch for billing spikes
+- [ ] your complaint and bounce rates
+
+#### Q35. Your web application is getting a suspicious amount of bad requests from foreign IP addresses. Your business is operating in only a few countries and you would like to block any other traffic. What is the best practice for limiting access to your web application by country?
+
+- [ ] Use Web Application Firewall and create a geo match condition to drop all requests from countries that aren't on your allow list.
+- [ ] Use Application Load Balancer to create a new routing rule that looks at source IP address. Add an IP block for the countries that have access.
+- [x] Host the front end of your website in CloudFront and configure a geo restriction on the distribution.
+- [ ] Use CloudTrail to monitor the IP addresses of the bad requests. Use Lambda to add these IP addresses to an Application Load Balancer rule that blocks the IPs.
+
+#### Q36. What privilege is specific to the AWS root account, and cannot be granted to another IAM user on the account?
+
+- [ ] Create a new hosted zone in Route 53.
+- [ ] Delete the AWS account.
+- [x] Revoke the AdministratorAccess role or grant it to another IAM user.
+- [ ] Modify the billing details.
+
+#### Q37. If a set of servers are located within a private subnet of your VPC, how can you connect those servers to on-premise servers?
+
+- [x] Establish a connection with AWS Direct Connect.
+- [ ] Install a OpenVPN server on an instance that is located within the subnet with an elastic IP.
+- [ ] All of these options can establish a connection to a private subnet.
+- [ ] Use the AWS Client VPN.
+
+#### Q38. You are hosting an application configured to stream media to its clients on TCP ports 3380-3384, 3386-3388, and 3390.
+
+The Inbound tab below shows three incoming security group policies attached to this instance. Which policy should you use?
+
+https://cdn.lynda.com/question/5d250275498e43453c6c8705/5d250275498e43453c6c8705-1562706631702
+
+- [ ] The rule that exposes TCP ports 3380-3390 would also publicly expose port 3389 (RDP) to the entire internet. Write separate rules to only expose the needed ports.
+- [ ] The first security group rule allows all traffic into this instance. Exposing your entire instance to the whole internet leaves the server open to various attacks of the other services running on different port numbers.
+- [x] Verify that the AWS account owners actually control the entire CIDR C block for 12.228.11.0-255 and these are secured IPs for RDP access into this instance.
+- [ ] There are no recommendations to make.

@@ -236,7 +236,7 @@
 
 #### Q31. In the S3 console, underneath the Access column, what does the public badge next to the bucket name indicate?
 
-https://cdn.lynda.com/question/5d250275498e43453c6c86de/5d250275498e43453c6c86de-1562706910644
+![img](image/00.png)
 
 - [ ] All objects within this bucket are writable, which means that the public internet has the ability to upload any file directly to your S3 bucket. Your S3 bucket could be used to serve malware.
 - [ ] Objects within this bucket can be made public, if the ACL on that object is set to allow everyone access. Private buckets do not allow you to set public permissions on any object.
@@ -300,7 +300,7 @@ aws ecs create-service \
 
 The Inbound tab below shows three incoming security group policies attached to this instance. Which policy should you use?
 
-https://cdn.lynda.com/question/5d250275498e43453c6c8705/5d250275498e43453c6c8705-1562706631702
+![img](image/01.png)
 
 - [ ] The rule that exposes TCP ports 3380-3390 would also publicly expose port 3389 (RDP) to the entire internet. Write separate rules to only expose the needed ports.
 - [ ] The first security group rule allows all traffic into this instance. Exposing your entire instance to the whole internet leaves the server open to various attacks of the other services running on different port numbers.

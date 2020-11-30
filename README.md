@@ -1,7 +1,7 @@
 # Linkedin-quiz-questions
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-179-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-182-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > This repository does not pretend to give you all answers for LinkedIn questions, rather it's a starting guide to help you prepare for the LinkedIn skills quiz and to know what to expect in the main exam or which areas to target in your exam preparations. Should you have found some incorrect answers, or want to contribute your answers, please feel free to create any PR changes - all are welcome!
@@ -249,7 +249,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/ayushsahu1999"><img src="https://avatars0.githubusercontent.com/u/46241471?v=4" width="100px;" alt=""/><br /><sub><b>Ayush Sahu</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=ayushsahu1999" title="Code">💻</a></td>
     <td align="center"><a href="https://greenglow123.wordpress.com/"><img src="https://avatars1.githubusercontent.com/u/43813666?v=4" width="100px;" alt=""/><br /><sub><b>Hridya Krishna R</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=hridyakrishna" title="Code">💻</a></td>
     <td align="center"><a href="http://rahbal.github.io"><img src="https://avatars3.githubusercontent.com/u/5176514?v=4" width="100px;" alt=""/><br /><sub><b>Rahul Bali</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=rahbal" title="Code">💻</a> <a href="#design-rahbal" title="Design">🎨</a></td>
-    <td align="center"><a href="https://github.com/DevHabit"><img src="https://avatars0.githubusercontent.com/u/3051782?v=4" width="100px;" alt=""/><br /><sub><b>S.ZHeng</b></sub></a><br /><a href="#design-DevHabit" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/DevHabit"><img src="https://avatars0.githubusercontent.com/u/3051782?v=4" width="100px;" alt=""/><br /><sub><b>S.ZHeng</b></sub></a><br /><a href="#design-DevHabit" title="Design">🎨</a> <a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=DevHabit" title="Code">💻</a></td>
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/shriyaMadan"><img src="https://avatars1.githubusercontent.com/u/38863530?v=4" width="100px;" alt=""/><br /><sub><b>Shriya Madan</b></sub></a><br /><a href="#design-shriyaMadan" title="Design">🎨</a> <a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=shriyaMadan" title="Code">💻</a></td>
@@ -328,6 +328,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://jaygajjar.tk/"><img src="https://avatars2.githubusercontent.com/u/57590688?v=4" width="100px;" alt=""/><br /><sub><b>Jay Gajjar</b></sub></a><br /><a href="#design-j-j-gajjar" title="Design">🎨</a></td>
     <td align="center"><a href="https://github.com/coolerbooler"><img src="https://avatars1.githubusercontent.com/u/74932465?v=4" width="100px;" alt=""/><br /><sub><b>coolerbooler</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=coolerbooler" title="Code">💻</a></td>
     <td align="center"><a href="https://jinnatul.github.io/"><img src="https://avatars2.githubusercontent.com/u/31995155?v=4" width="100px;" alt=""/><br /><sub><b>Md Zinnatul Islam Morol</b></sub></a><br /><a href="#design-jinnatul" title="Design">🎨</a></td>
+    <td align="center"><a href="https://github.com/shresthashok550"><img src="https://avatars2.githubusercontent.com/u/67057717?v=4" width="100px;" alt=""/><br /><sub><b>shresthashok550</b></sub></a><br /><a href="#design-shresthashok550" title="Design">🎨</a> <a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=shresthashok550" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://alanpallath.codes/"><img src="https://avatars0.githubusercontent.com/u/17932700?v=4" width="100px;" alt=""/><br /><sub><b>Alan Pallath</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=a1764879" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/adrianjw/"><img src="https://avatars3.githubusercontent.com/u/55360387?v=4" width="100px;" alt=""/><br /><sub><b>Adrian Wong</b></sub></a><br /><a href="https://github.com/Ebazhanov/in-quiz-questions/commits?author=adrianjw" title="Code">💻</a></td>
   </tr>
 </table>
 
